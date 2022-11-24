@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="user">
+                    <div class="user__avatar">
+                        <img src="https://via.placeholder.com/57/333" alt="" class="user__img">
+                    </div>
+                    <div class="user__content">
+                        <div class="user__name">Никита <br> Девятков</div>
+                        <div class="user__prof">Фронт-энд разработчик</div>
+                    </div>
+                </div>
+                <nav class="nav" id="nav">
+                    <a href="" class="nav__link active">Работы</a>
+                    <a href="" class="nav__link">Обо мне</a>
+                    <a href="" class="nav__link">Блог</a>
+                    <a href="" class="nav__link">Контакты</a>
+                    <a href="" class="nav__link nav__link--btn" data-modal="#modal_hire_me">Связаться</a>
+                </nav>
+
+                <div class="burger" id="navToggle">
+                    <img class="burger__icon" src="./img/burger.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__content">
+                    <h2 class="intro__subtitle">Привет, меня зовут</h2>
+                    <h1 class="intro__title">Никита Девятков</h1>
+                    <div class="intro__text">Фронт-энд разработчик</div>
+                    <div class="social">
+                        <a href="#" class="social__link">
+                            <img src="./img/behance.svg" alt="" class="social__img">
+                        </a>
+                        <a href="" class="social__link">
+                            <img src="./img/dribbble.svg" alt="" class="social__img">
+                        </a>
+                        <a href="" class="social__link">
+                            <img src="./img/in.svg" alt="" class="social__img">
+                        </a>
+                        <a href="" class="social__link">
+                            <img src="./img/facebook.svg" alt="" class="social__img">
+                        </a>
+                        <a href="" class="social__link">
+                            <img src="./img/instagram.svg" alt="" class="social__img">
+                        </a>
+                        <a href="" class="social__link">
+                            <img src="./img/twitter.svg" alt="" class="social__img">
+                        </a>
+                    </div>
+                    <a href="" class="btn" data-modal="#modal_hire_me">Связаться</a>
+                    <button class="btn" type="button" data-modal="#modal_resume">РЕЗЮМЕ</button>
+                </div>
+                <img src="./img/photo.png" alt="" class="intro__photo">
+            </div>
+        </div>
+    </section>
+    <div class="works">
+        <div class="container">
+            <div class="works__nav">
+                <a href="" class="works__nav-link" data-filter="all">Все</a>
+                <a href="" class="works__nav-link" data-filter="app">Приложения</a>
+                <a href="" class="works__nav-link" data-filter="website">Веб-сайты</a>
+                <a href="" class="works__nav-link" data-filter="interaction">Интерактивы</a>
+            </div>
+            <div class="portfolio">
+                <div class="portfolio__col" data-cat="website">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img src="./img/ProjectQuiz1.PNG" alt="" class="work__img">
+                        <div class="work__content">
+                            <div class="work__cat">Веб-сайт</div>
+                            <div class="work__headline">
+                                <h4 class="work__title">Сайт викторин</h4>
+                                <time class="work__date" datetime="2022-02-16 19:00">2022</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="website">
+                    <div class="work" data-modal="#modal_project_2">
+                        <img src="./img/ProjectSurf1.PNG" alt="" class="work__img">
+                        <div class="work__content">
+                            <div class="work__cat">Веб-сайт</div>
+                            <div class="work__headline">
+                                <h4 class="work__title">Магазин досок для серфинга</h4>
+                                <time class="work__date" datetime="2022-07-14 19:00">2022</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="website">
+                    <div class="work" data-modal="#modal_project_3">
+                        <img src="./img/ProjectCollect1.PNG" alt="" class="work__img">
+                        <div class="work__content">
+                            <div class="work__cat">Веб-сайт</div>
+                            <div class="work__headline">
+                                <h4 class="work__title">Магазин мебели</h4>
+                                <time class="work__date" datetime="2022-11-22 16:30">2022</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="" class="btn btn--sm">ЕЩЕ РАБОТЫ</a>
+            </div>
+            
+        </div>
+    </div>
+    <section class="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__photo">
+                    <img src="./img/designer_photo.png" alt="" class="img about__img">
+                </div>
+                <div class="about__content">
+                    <h3 class="about__title">Обо мне</h3>
+                    <h2 class="about__bigtitle">Кто я такой</h2>
+                    <div class="about__text">
+                        <p>
+                            Меня зовут Девятков Никита. Мне 26 лет. Родился в городе Челябинске, где в данный момент и проживаю. 
+                        </p>
+                        <p>
+                            Я начинающий фронт энд разработчик. Занимаюсь разработкай сайтов с 2022 года. Владею такими технологиями, как html, css, js (jquery), gulp, npm, github. Регулярно изучаю новые технологии и расширяю свой кругозор в области it-технологий.
+                        </p>
+                        <p>
+                            Готов принять ваши заказы! Гарантирую быстрое и качественное выполнение работы
+                        </p>
+                    </div>
+                    <a href="" class="btn" data-modal="#modal_hire_me">Связаться</a>
+                    <button class="btn" data-modal="#modal_resume">Резюме</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <div class="reviews">
+        <div class="container">
+            <div class="reviews__item">
+                <div class="reviews__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio placeat modi fuga tempore nisi aperiam, aliquam asperiores natus doloribus tempora. Soluta, perspiciatis amet! Id sequi voluptates laudantium rerum quae. Veniam?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio placeat modi fuga tempore nisi aperiam, aliquam asperiores natus doloribus tempora. Soluta, perspiciatis amet! Id sequi voluptates laudantium rerum quae. Veniam?</p>
+                </div>
+            </div>
+            <div class="reviews__author">
+                <img class="reviews__photo" src="https://via.placeholder.com/103/333" alt="">
+                <div class="reviews__name">Edward M. Brooks</div>
+                <div class="reviews__company">Marketing House</div>
+                <div class="reviews__rating">
+                    <img class="reviews__star" width="13" height="13" src="./img/star-point_icon-icons.com_68483.svg" alt="">
+                    <img class="reviews__star" width="13" height="13" src="./img/star-point_icon-icons.com_68483.svg" alt="">
+                    <img class="reviews__star" width="13" height="13" src="./img/star-point_icon-icons.com_68483.svg" alt="">
+                    <img class="reviews__star" width="13" height="13" src="./img/star-point_icon-icons.com_68483.svg" alt="">
+                    <img class="reviews__star reviews__star--unactive" width="13" height="13" src="./img/star-point_icon-icons.com_68483.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <section class="news">
+        <div class="container">
+            <div class="news__header">
+                <h3 class="news__title"></h3>
+                <div class="news__text"></div>
+            </div>
+            <div class="articles">
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <time class="articles__date">10
+                                <br> june</time>
+                            <a href="#" class="article__link">
+                                <img src="https://via.placeholder.com/370x257" alt="" class="articles__photo">
+                            </a>   
+                        </div>
+                        <div class="articles__content">
+                            <a href="#">
+                                <h4 class="articles__title">TEN THE BEST APP IN 2017</h4>
+                            </a>
+                            <div class="articles__cat">CATEGORY </div>
+                            <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</div>
+                        </div>
+                        <a href="" class="btn btn--sm">READ MORE</a>
+                    </div>
+                </div>
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <time class="articles__date">10
+                                <br> june</time>
+                            <a href="#" class="article__link">
+                                <img src="https://via.placeholder.com/370x257" alt="" class="articles__photo">
+                            </a>   
+                        </div>
+                        <div class="articles__content">
+                            <a href="#">
+                                <h4 class="articles__title">TEN THE BEST APP IN 2017</h4>
+                            </a>
+                            <div class="articles__cat">CATEGORY </div>
+                            <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</div>
+                        </div>
+                        <a href="" class="btn btn--sm">READ MORE</a>
+                    </div>
+                </div>
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <time class="articles__date">10
+                                <br> june</time>
+                            <a href="#" class="article__link">
+                                <img src="https://via.placeholder.com/370x257" alt="" class="articles__photo">
+                            </a>   
+                        </div>
+                        <div class="articles__content">
+                            <a href="#">
+                                <h4 class="articles__title">TEN THE BEST APP IN 2017</h4>
+                            </a>
+                            <div class="articles__cat">CATEGORY </div>
+                            <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</div>
+                        </div>
+                        <a href="" class="btn btn--sm">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="news__footer">
+                <a class="news__link" href="">see more posts</a>
+            </div>
+        </div>
+    </section> -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__credits">
+                    <div class="footer__copyright">
+                        © 2018 UI43 - Free Templates
+                    </div>
+                    <div class="footer__social">
+                        <a href="" target="_blank">
+                            <img src="./img/iconmonstr-behance-1.svg" alt="" width="24">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="./img/iconmonstr-dribbble-1.svg" alt="" width="18">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="./img/iconmonstr-linkedin-1.svg" alt="" width="18">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="./img/iconmonstr-facebook-1.svg" alt="" height="18px">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="./img/iconmonstr-instagram-11.svg" alt="" width="18">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="./img/iconmonstr-twitter-1.svg" alt="" width="20">
+                        </a>
+                    </div>
+                </div>
+                <nav class="footer__nav">
+                    <a href="" class="footer__nav-link">Работы</a>
+                    <a href="" class="footer__nav-link">Обо мне</a>
+                    <a href="" class="footer__nav-link">Блог</a>
+                    <a href="" class="footer__nav-link">Контакты</a>
+                    <a href="" class="footer__nav-link footer__nav-link--btn" data-modal="#modal_hire_me">Связаться</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <div class="modal" id="modal_project_1">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="img/close_btn.svg" alt="Close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img src="./img/ProjectQuiz1.PNG" alt="" class="modal-work__photo">
+                        </div>
+                        <div>
+                            <img src="./img/ProjectQuiz2.PNG" alt="" class="modal-work__photo">
+                        </div>
+                        <div>
+                            <img src="./img/ProjectQuiz3.PNG" alt="" class="modal-work__photo">
+                        </div>
+                        <div>
+                            <img src="./img/ProjectQuiz4.PNG" alt="" class="modal-work__photo">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Сайт викторин</h3>
+                        <div class="modal-work__info">
+                            Веб-сайт 
+                            <span class="modal-work__info-divider">|</span> 2022
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Клиент</div>
+                        <div class="modal-work__client-company">Тестовая работа</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Выпускной проект курса LoftSchool "Основы верстки сайтов". Ссылка: https://nic-96.github.io/Task5/</p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn modal-work__btn--prev slickPrev" type="button">
+                            <img src="img/arrow_left.svg" alt="" height="20px">
+                            Предыдущий
+                        </button>
+                        <button class="modal-work__btn modal-work__btn--next slickNext" type="button">Следующий
+                            <img src="img/arrow_right.svg" alt="" height="20px">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_2">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="img/close_btn.svg" alt="Close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img src="./img/ProjectSurf1.PNG" alt="" class="modal-work__photo">
+                        </div>
+                        <div>
+                            <img src="./img/ProjectSurf2.PNG" alt="" class="modal-work__photo">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Магазин досок для серфинга</h3>
+                        <div class="modal-work__info">
+                            Веб-сайт 
+                            <span class="modal-work__info-divider">|</span> 2022
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Клиент</div>
+                        <div class="modal-work__client-company">Тестовая работа</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Выпускной проект курса LoftSchool "Веб-разработка для начинающих". Ссылка: https://nic-96.github.io/Surf/</p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn modal-work__btn--prev slickPrev" type="button">
+                            <img src="img/arrow_left.svg" alt="" height="20px">
+                            Предыдущий
+                        </button>
+                        <button class="modal-work__btn modal-work__btn--next slickNext" type="button">Следующий
+                            <img src="img/arrow_right.svg" alt="" height="20px">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_3">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="img/close_btn.svg" alt="Close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img src="./img/ProjectCollect1.PNG" alt="" class="modal-work__photo">
+                        </div>
+                        <div>
+                            <img src="./img/ProjectCollect2.PNG" alt="" class="modal-work__photo">
+                        </div>
+                        <div>
+                            <img src="./img/ProjectCollect3.PNG" alt="" class="modal-work__photo">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Магазин мебели</h3>
+                        <div class="modal-work__info">
+                            Веб-сайт
+                            <span class="modal-work__info-divider">|</span> 2022
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Клиент</div>
+                        <div class="modal-work__client-company">Мебельный салон</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Рабочий проект</p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn modal-work__btn--prev slickPrev" type="button">
+                            <img src="img/arrow_left.svg" alt="" height="20px">
+                            Предыдущий
+                        </button>
+                        <button class="modal-work__btn modal-work__btn--next slickNext" type="button">Следующий
+                            <img src="img/arrow_right.svg" alt="" height="20px">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_resume">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="img/close_btn.svg" alt="Close">
+            </button>
+            
+            <div class="modal__content">
+                <h3 class="modal__title text-center">
+                    Резюме
+                </h3>
+                <div class="text-center">
+                    <a href="" class="btn btn--thin">Скачать PDF</a>
+                    <a href="" class="btn btn--thin">Распечатать</a>
+                </div>
+                <div class="timeline">
+                    <div class="timeline__col timeline__col--left">
+                        <h4 class="timeline__title">ОПЫТ</h4>
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">январь 2022 - <b>Настоящее время</b></time>
+                            <h5 class="timeline__subtitle">Фрилансер</h5>
+                            <div class="timeline__position">Фронт-энд разработчик</div>
+                            <div class="timeline__text">
+                                <p>Начинающий фронт энд разработчик. Технологии: html, css, js (jquery), gulp, npm, github</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline__col timeline__col--right">
+                        <h4 class="timeline__title">Образование</h4>
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">январь 2022 - февраль 2022</time>
+                            <h5 class="timeline__subtitle">Основы верстки сайтов</h5>
+                            <div class="timeline__position">Loft School</div>
+                        </div>
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">июнь 2022 - июль 2022</time>
+                            <h5 class="timeline__subtitle">Веб-разработчик для начинающих</h5>
+                            <div class="timeline__position">Loft School</div>
+                        </div>
+                        <h4 class="timeline__title">НАВЫКИ</h4>
+                        <div class="progress-bar">
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">HTML</div>    
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">CSS</div>    
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">Java Script</div>    
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">Jquery</div>    
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">NPM</div>    
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 40%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">Gulp</div>    
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">SASS</div>    
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">GitHub</div>    
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <h4 class="timeline__title">AWARDS</h4>
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2005 - 2010</time>
+                            <h5 class="timeline__subtitle">UI/UX Design</h5>
+                            <div class="timeline__position">LA university</div>
+                            <div class="timeline__text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate velit suscipit perferendis placeat error nihil repellat aliquid laudantium, incidunt consectetur! Vel inventore corrupti, tempora ullam animi facere aperiam eum excepturi.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2005 - 2010</time>
+                            <h5 class="timeline__subtitle">UI/UX Design</h5>
+                            <div class="timeline__position">LA university</div>
+                            <div class="timeline__text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate velit suscipit perferendis placeat error nihil repellat aliquid laudantium, incidunt consectetur! Vel inventore corrupti, tempora ullam animi facere aperiam eum excepturi.</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="" class="btn" data-modal="#modal_hire_me">Связаться</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_hire_me">
+        <div class="modal__dialog modal__dialog--sm">
+            <button class="modal__close" type="button" data-close>
+                <img src="img/close_btn.svg" alt="Close">
+            </button>
+            <div class="contact">
+                <div class="contact__left">
+                    <h3 class="modal__title mb-0">
+                        ЕСТЬ ВОПРОСЫ?
+                    </h3>
+                    <div class="modal__subtitle">
+                        ПОЗВОНИТЕ ИЛИ НАПИШИТЕ НА ПОЧТУ
+                    </div>
+
+                    <ul class="contact__info">
+                        <li class="contact__info-item">
+                            <img class="contact__info-icon" src="./img/phone.svg" alt="">
+                            +7 951 805 63 79
+                        </li>
+                        <li class="contact__info-item">
+                            <img class="contact__info-icon" src="./img/mail.svg" alt="">
+                            Nic9996@gmail.com
+                        </li>
+                    </ul>
+                    <form class="form" action="/" method="post">
+                        <div class="form__group">
+                            <label for="input-email" class="form__label">E-mail</label>
+                            <input id="input-email" type="text" name="input-email" class="form__input" placeholder="Введите e-mail">
+                        </div>
+                        <div class="form__group">
+                            <label for="input-text" class="form__label">Сообщение</label>
+                            <textarea class="form__textarea" name="input-text" id="input-text" placeholder="Введите сообщение"></textarea>
+                        </div>
+
+                        <div class="text-right">
+                            <button class="btn" type="submit">ОТПРАВИТЬ</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact__right">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
