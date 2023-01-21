@@ -1,0 +1,55 @@
+ <svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="behance" viewBox="0 0 41 41">
+        <g id="behance" transform="translate(-139 -346)">
+            <rect id="bg" width="41" height="41" transform="translate(139 346)" fill="#1869ff"/>
+            <text id="behance-2" data-name="behance" transform="translate(146 376)" fill="#fff" font-size="23" font-family="FontAwesome"><tspan x="0" y="0"></tspan></text>
+        </g>
+    </symbol>
+    <symbol id="dribbble" viewBox="0 0 41 41">
+        <g id="dribbble" transform="translate(-348 -346)">
+            <path id="bg" d="M0,0H41V41H0Z" transform="translate(348 346)" fill="#e51a68"/>
+            <text id="dribbble-2" data-name="dribbble" transform="translate(358 376)" fill="#fff" font-size="25" font-family="FontAwesome"><tspan x="0" y="0"></tspan></text>
+        </g>
+    </symbol>
+    <symbol id="in" viewBox="0 0 41 41">
+        <g id="in" transform="translate(-400 -346)">
+            <path id="bg" d="M0,0H41V41H0Z" transform="translate(400 346)" fill="#007bb6"/>
+            <text id="in-2" data-name="in" transform="translate(411 375)" fill="#fff" font-size="24" font-family="FontAwesome"><tspan x="0" y="0"></tspan></text>
+        </g>
+    </symbol>
+    <symbol id="facebook" viewBox="0 0 41 41">
+        <g id="facebook" transform="translate(-189 -346)">
+            <rect id="bg" width="41" height="41" transform="translate(189 346)" fill="#3a5898"/>
+            <text id="facebook-2" data-name="facebook" transform="translate(202 376)" fill="#fff" font-size="23" font-family="FontAwesome"><tspan x="0" y="0"></tspan></text>
+        </g>
+    </symbol>
+    <symbol id="instagram" viewBox="0 0 41 41">
+        <g id="instagram" transform="translate(-296 -346)">
+            <path id="bg" d="M0,0H41V41H0Z" transform="translate(296 346)" fill="#13578a"/>
+            <text id="instagram-2" data-name="instagram" transform="translate(305 377)" fill="#fff" font-size="26" font-family="FontAwesome"><tspan x="0" y="0"></tspan></text>
+        </g>
+    </symbol>
+    <symbol id="twitter" viewBox="0 0 41 41">
+        <g id="twitter" transform="translate(-243 -346)">
+            <path id="bg" d="M0,0H41V41H0Z" transform="translate(243 346)" fill="#56acef"/>
+            <text id="twitter-2" data-name="twitter" transform="translate(252 377)" fill="#fff" font-size="25" font-family="FontAwesome"><tspan x="0" y="0"></tspan></text>
+        </g>
+    </symbol>
+    <symbol id="close_btn" viewBox="0 0 34 39">
+        <g id="button" transform="translate(-1273 -137)">
+            <text id="close" transform="translate(1290 170)" fill="#2b2a2c" font-size="39" font-family="FontAwesome" letter-spacing="0.05em"><tspan x="-16.714" y="0"></tspan></text>
+        </g>
+    </symbol>
+    <symbol id="phone" viewBox="0 0 15 17">
+        <text id="phone" transform="translate(0 15)" fill="#2b2a2c" font-size="17" font-family="FontAwesome"><tspan x="0" y="0"></tspan></text>
+    </symbol>
+    <symbol id="mail" viewBox="0 0 14 14">
+        <text id="message" transform="translate(0 12)" fill="#2b2a2c" font-size="14" font-family="FontAwesome"><tspan x="0" y="0"></tspan></text>
+    </symbol>
+    <symbol id="arrow_left" viewBox="0 0 8 21">
+        <text id="arrow" transform="translate(8 3) rotate(180)" fill="#2b2a2c" font-size="21" font-family="FontAwesome"><tspan x="0" y="0"></tspan></text>
+    </symbol>
+    <symbol id="arrow_right" viewBox="0 0 8 21">
+        <text id="arrow" transform="translate(0 18)" fill="#2b2a2c" font-size="21" font-family="FontAwesome"><tspan x="0" y="0"></tspan></text>
+    </symbol>
+</svg>
